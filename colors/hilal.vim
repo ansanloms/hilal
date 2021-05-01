@@ -191,3 +191,9 @@ if get(g:, "hilal_italic", 1) != 1
     hi Special         gui=NONE
     hi JavaDocComment  gui=NONE
 endif
+
+if get(g:, "hilal_bold", 1) != 1
+    hi Title         gui=NONE
+    hi MatchParen    gui=NONE
+    hi Todo          gui=UNDERLINE
+endif
