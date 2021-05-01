@@ -185,3 +185,9 @@ hi link HtmlEndTag     XmlTagName
 hi SignifySignAdd       guifg=#308a3f    guibg=NONE    gui=NONE
 hi SignifySignChange    guifg=#1f4f8a    guibg=NONE    gui=NONE
 hi SignifySignDelete    guifg=#ea4d45    guibg=NONE    gui=NONE
+
+if get(g:, "hilal_italic", 1) != 1
+    hi Comment         gui=NONE
+    hi Special         gui=NONE
+    hi JavaDocComment  gui=NONE
+endif
